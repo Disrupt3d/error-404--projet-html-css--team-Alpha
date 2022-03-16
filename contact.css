@@ -1,1 +1,77 @@
+:root {    
+/* colors et polices*/
+    --main-background-color: #393e41;
+    --color1: #587b7f;
+    --color2: #d8d4d3;
+    --color3: #f1f2eb;
+    --title-font: "Libre Baskerville", serif;
+    --text-font: "Lato", sans-serif;
+/* espacement de lignes et longueur max */ 
+    --main-line-height: 1.4 rem;
+    --main-line-lenght: 25 ch;
+    --margin-mobile: 0px;
+/* police size and weight */  
+    --text-size: 1rem; /* pour le texte */
+    --title-size: 1.5rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
+    --font-text-weight: bold;
+    --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
+    box-sizing: border-box;
+}
 
+body{
+    margin: var(--margin-mobile);
+    background-color: var(--main-background-color);
+}
+
+section{
+    margin: auto;
+    width: 25rem;
+    height: 8rem;
+}
+
+section p{
+    font: var(--text-font);
+    font-size: var(--text-size);
+    color: var(--color2);
+}
+
+section h1{
+    text-align: center;
+    font:var(--title-font);
+    font-size: var(--title-size);
+    color: var(--color3);
+}
+
+img{
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin: auto; /* permet de centre  */
+    margin-top: 2rem;
+    text-align: center;
+    width: 25rem;
+    height: 25rem;
+}
+
+.ancre{
+    color: var(--color2);
+}
+
+.input {
+    /* on parametre les input de la page contact et leur style  */
+    border-radius: 6px;
+}
+  
+.inputMessage {
+    /* on parametre l'input message de la page contact et son style  */
+    border-radius: 6px;
+}
+
+label{
+    font: var(--text-font);
+    font-size: var(--text-size);
+    color: var(--color2);
+}
