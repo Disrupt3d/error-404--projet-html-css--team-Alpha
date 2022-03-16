@@ -1,5 +1,5 @@
 /**
- * redirect the 404.html to the index page after a 5sec delay
+ * redirect the 404.html to the index page after a 10sec delay
  * @var string
  */
 function redirection()
@@ -8,5 +8,5 @@ function redirection()
     {
         window.location.href = "https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/"
     },
-    5000);
+    10000);
 }
