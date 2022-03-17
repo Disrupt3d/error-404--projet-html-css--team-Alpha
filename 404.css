@@ -1,56 +1,65 @@
-header {}
+header {
+  height: 55px;
+  background-color: var(--main-background-color);
+}
 
 nav {}
 
 
-main {
 
-
+footer {
+  height: 300px;
+  background-color: var(--main-background-color);
 }
 
-footer {}
+
+
+
+
+main {
+background-color: var(--color3);  
+  
+}
+
+/* TEXT */
+
+#main_404 h1, #main_404 p {
+  text-align: center;
+}
+
+#main_404 h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+#main_404 strong {
+  text-transform: uppercase;
+}
 
 
 
 /* HORLOGE */
 
-#test {
-width: 100vw;
-height: 100vh;
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
-.clock {
-    /* border-radius: 50%;
-    background: #fff url(ios_clock.svg) no-repeat center;
-    background-size: 88%;
-    height: 20em;
-    padding-bottom: 31%;
-    position: relative;
-    width: 20em; */
 
+
+
+.clock {
     width: 20em;
     height: 20em;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid var(--color1);
     position: relative;
     padding: 10px;
   }
   
   .clock:after {
-    /* background: #000;
-    border-radius: 50%;
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 6%;
-    height: 6%;
-    z-index: 100; */
-
     background: #000;
     border-radius: 50%;
     content: "";
@@ -73,7 +82,7 @@ height: 100vh;
 
 
   .seconds {
-    background: #000;
+    background: var(--color1);
     height: 45%;
     left: 49.5%;
     position: absolute;

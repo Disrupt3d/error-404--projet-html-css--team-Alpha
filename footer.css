@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+
+footer section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+
+/* A ENLEVER DES QUE POSSIBLE */
+.grid-item > h1 {
+    margin: 0;
+}
+/* A ENLEVER DES QUE POSSIBLE */
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#team_addresses {}
+
+#socials {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+#links {}
+
+ul {
+    padding-left: 0;
+}

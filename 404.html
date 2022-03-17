@@ -11,16 +11,16 @@
   <meta name="description"
     content="This is the page you're redirected to if any problem was encountered during the process or giving you the right page you were looking for.">
 
-
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"> -->
-
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/404.css">
+  <link rel="stylesheet" href="/footer.css">
+
+
 </head>
 
-<!-- <body onload="redirection()"> -->
+<body onload="redirection()">
 
-<body>
+<!-- <body> -->
 
   <header>
     <nav>
@@ -28,12 +28,16 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Oh NOOO...</h1>
+  <main id="main_404">
+    <h1>
+      <i class="fa-regular fa-face-sad-cry"></i>
+      Oh NOOO...
+      <i class="fa-regular fa-face-sad-cry"></i>
+    </h1>
 
-    <p>Something went wrong, but no stress, you will be redirected to the main page.</p>
+    <p>Something went wrong, but <strong>no stress</strong>, you will be redirected to the main page.</p>
 
-    <div id="test">
+    <div id="container">
 
       <article class="clock">
 
@@ -42,6 +46,7 @@
         </div>
 
       </article>
+
     </div>
 
   </main>
@@ -51,23 +56,38 @@
   <footer>
 
     <section>
-      <div>
-        <p></p>
+
+      <div class="grid-item">
+
+        <ul id="team_addresses">
+          <li><a href="#">membre 01</a></li>
+          <li><a href="#">membre 02</a></li>
+          <li><a href="#">membre 03</a></li>
+          <li><a href="#">membre 04</a></li>
+          <li><a href="#">membre 05</a></li>
+        </ul>
+
       </div>
 
-      <div>
+      <div class="grid-item">
         <h1>
-
+          <img src="" alt="">LOGO
         </h1>
-        <span></span>
-      </div>
 
-      <div>
-        <ul>
+        <ul id="socials">
           <li><i class="fa-brands fa-facebook-square"></i></li>
           <li><i class="fa-brands fa-twitter-square"></i></li>
           <li><i class="fa-brands fa-instagram-square"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
+
+      <div class="grid-item">
+        <ul id="links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
 
