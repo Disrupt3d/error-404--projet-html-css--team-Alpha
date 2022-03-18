@@ -1,0 +1,23 @@
+{
+  "name": "error-404--projet-html-css--team-alpha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "w3c-html-validator footer.html header.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Disrupt3d/error-404--projet-html-css--team-Alpha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Disrupt3d/error-404--projet-html-css--team-Alpha/issues"
+  },
+  "homepage": "https://github.com/Disrupt3d/error-404--projet-html-css--team-Alpha#readme",
+  "dependencies": {
+    "w3c-html-validator": "^1.0.3"
+  }
+}
