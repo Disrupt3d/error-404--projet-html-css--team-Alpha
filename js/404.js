@@ -9,7 +9,7 @@
  
      setTimeout(function ()
      {
-         window.location.href = "https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/"
+         window.location.href = ""
      },
      time);
  }

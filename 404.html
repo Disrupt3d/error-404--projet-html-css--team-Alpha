@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>404</title>
+    <title>404 Error Page</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="160carac">
+    <meta name="description"
+        content="This is the page you're redirected to if any problem was encountered during the process or giving you the right page you were looking for.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +18,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/404.css">
-    
+
 </head>
 
-<body>
+<body onload="redirection()">
+    <!-- <body> -->
 
     <!-- HEADER -->
     <header class="top-nav">
@@ -43,9 +45,25 @@
     </header>
 
 
-    <!-- MAIN -->
+    <!-- MAIN 404 -->
     <main id="main_404">
+        <!-- text -->
+        <h1>
+            <i class="fa-regular fa-face-sad-cry"></i>
+            Oh NOOO...
+            <i class="fa-regular fa-face-sad-cry"></i>
+        </h1>
 
+        <p>Something went wrong, but <strong>no stress</strong>, you will be redirected to the main page.</p>
+
+        <!-- clock -->
+        <div id="container">
+            <div class="clock">
+                <div class="seconds-container">
+                    <div class="seconds"></div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -78,14 +96,10 @@
 
             <div class="sitemap">
                 <ul class="links">
-                    <li><a href="https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/index.html">Accueil
-                    </li></a>
-                    <li><a href="https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/services.html">Services
-                    </li></a>
-                    <li><a href="https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/team.html">Team</li>
-                    </a>
-                    <li><a href="https://disrupt3d.github.io/error-404--projet-html-css--team-Alpha/contact.html">Contact
-                    </li></a>
+                    <li><a href="index.html">Accueil</li></a>
+                    <li><a href="services.html">Services</li></a>
+                    <li><a href="team.html">Team</li></a>
+                    <li><a href="contact.html">Contact</li></a>
                 </ul>
             </div>
         </div>
@@ -94,6 +108,7 @@
 
     <!-- SCRIPTS -->
     <script src="script.js"></script>
+    <script src="404.js"></script>
     <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
 
 </body>
