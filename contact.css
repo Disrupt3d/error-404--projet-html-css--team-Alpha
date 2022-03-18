@@ -26,13 +26,26 @@ body{
 section{
     margin: auto;
     width: 25rem;
-    height: 8rem;
+    height: 6rem;
 }
 
 section p{
     font: var(--text-font);
     font-size: var(--text-size);
     color: var(--color2);
+    max-height: var(--main-line-height);
+    /* line-lenght a chercher */
+}
+
+.liste{
+    height: 13rem;
+}
+
+section > ul{
+    font: var(--text-font);
+    font-size: var(--text-size);
+    color: var(--color2);
+    max-height: var(--main-line-height);
 }
 
 section h1{
@@ -42,10 +55,14 @@ section h1{
     color: var(--color3);
 }
 
-img{
+
+.imgMap{
+    display: flex;
+    justify-content: center;
+}
+
+div img{
     width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 form {
@@ -60,18 +77,29 @@ form {
     color: var(--color2);
 }
 
-.input {
+input {
     /* on parametre les input de la page contact et leur style  */
-    border-radius: 6px;
+    border-radius: 10px;
 }
   
 .inputMessage {
     /* on parametre l'input message de la page contact et son style  */
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 label{
     font: var(--text-font);
     font-size: var(--text-size);
     color: var(--color2);
+}
+
+button {
+    background-color: var(--color1); /* couleur de fond du bouton  */
+    color: var(--color2); /* couleur le l'ecriture dans le bouton  */
+    text-align: center; /* aligner le text au centre du bouton  */
+    border-radius: 10px; /* arondi les angles du bouton  */
+    width: 100px; /* choisir les dimension avec width et height  */
+    height: 40px;
+    font-size: var(--title-font); /* taille de la police d'ecriture  */
+    margin-top: 1.5rem;
 }

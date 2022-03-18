@@ -14,25 +14,41 @@
 
     <header></header>
 
-    <section>
-        <h1>Besoin de plus de reinseignement ? </h1>
-        <p>Vous avez une question ? vous voulez nous rencontrer ?
-        vous pouvez nous contacter avec le <a class="ancre" href="#nameInput">formulaire</a> en fin de page</p>
+    <section class="renseignement">
+        <h1>Besoin de plus de renseignements ? </h1>
+        <p>Vous avez une question ? Vous voulez nous rencontrer ?
+        Vous pouvez nous contacter avec le <a class="ancre" href="#nameInput">formulaire</a> en fin de page.</p>
     </section>
 
-    <img src="asset/mapLocation.png" alt="carte de france ou vous pouvez nous trouver.">
+    <section class="liste">
+        <h1> Où nous trouver ? </h1>
+        <p>Vous pouvez nous retrouver dans ces villes :</p>
+        <ul>
+            <li>Benoit à <a class="ancre" href="https://www.google.com/maps/place/85200+Fontenay-le-Comte/@46.4587083,-0.8237517,13z/data=!3m1!4b1!4m5!3m4!1s0x4806c331dd05bcfd:0xd439043c678c01a9!8m2!3d46.465972!4d-0.8065"> Fontenay le Comte </a></li>
+            <li>Fabienne à <a class="ancre" href="https://www.google.com/maps/place/Lyon/@45.7580052,4.8001108,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659"> Lyon </a></li>
+            <li>Alex à <a class="ancre" href="https://www.google.com/maps/place/Avignon/@43.9416582,4.7632179,12z/data=!3m1!4b1!4m5!3m4!1s0x12b5eb8739bc9d07:0xe6429b6efa1d7b36!8m2!3d43.949317!4d4.805528"> Avignon </a></li>
+            <li>Maxime à <a class="ancre" href="https://www.google.com/maps/place/21000+Dijon/@47.3319225,4.9971998,13z/data=!3m1!4b1!4m5!3m4!1s0x47f29d8ceffd9675:0x409ce34b31458d0!8m2!3d47.322047!4d5.04148">Dijon</a></li>
+            <li>Quentin à <a class="ancre" href="https://www.google.com/maps/place/Tours/@47.3943218,0.6599232,13z/data=!3m1!4b1!4m5!3m4!1s0x47fcd5b34a979a55:0x40dc8d705388430!8m2!3d47.394144!4d0.68484">Tours</a></li>
+        </ul>
+    </section>
 
+    <div class="imgMap">
+        <img src="asset/mapLocation.png" alt="carte de france ou vous pouvez nous trouver.">
+    </div>
+    
     <form>
-        <label for="nameinput">Name :</label>
+        <label for="nameInput">Name :</label>
+        <br>
         <input type="text" id="nameInput" name="name" />
         <br><br>
-        <label for="emailinput">Email :</label>
+        <label for="emailInput">Email :</label>
+        <br>
         <input type="text" id="emailInput" /> 
         <br><br>
         <label for="messageInput">Message :</label>
-        <textarea class="inputMessage" id="messageInput" name="message" rows="6" cols="50"></textarea>    
+        <textarea class="inputMessage" id="messageInput" name="message" rows="6" cols="50"></textarea>
+        <button id="sendmail">Submit</button>    
     </form>
 
-    <footer></footer>
 </body>
 </html>
