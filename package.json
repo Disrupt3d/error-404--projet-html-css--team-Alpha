@@ -1,11 +1,11 @@
 {
   "name": "error-404--projet-html-css--team-alpha",
   "version": "1.0.0",
-  "description": "",
+  "description": "Le repo original du projet de la team 1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "w3c-html-validator footer.html header.html"
+    "validate": "w3c-html-validator contact.html"
   },
   "repository": {
     "type": "git",
