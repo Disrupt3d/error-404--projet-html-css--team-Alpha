@@ -1,79 +1,102 @@
-/* GENERAL RESET */
-body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+*{
+    background-color: #F1F2EB;
+    font-family: 'Lato' ;
+   
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Baskerville', sans-serif;
+    .banner {
+        display: block;
+            margin: 0 auto;
+            max-width: 100%;
+}   
+    
+
+main {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around ;
+    padding: 2rem;
+}  
+
+section{
+    border: 2px solid #587B7F ;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #587B7F;
+    text-align: center;
+    flex : 1 1 0 ;
+    margin : 3rem ;
+    padding: 1rem;
+  }
+
+h1{
+    font-size: 3rem;
+    font-weight : bold ;
 }
 
-/* VARIABLES */
-:root {
-    /* colors and fonts*/
-
-    --main-background-color: #393e41;
-    --color1: #587b7f;
-    --color2: #d8d4d3;
-    --color3: #f1f2eb;
-    /* --title-font: "Libre Baskerville", serif;
-    --text-font: "Lato", sans-serif; */
-
-    /* espacement de lignes et longueur max */
-
-    --main-line-height: 1.4 rem;
-    --main-line-lenght: 25 ch;
-    --margin-mobile: 0px;
-
-    /* police size and weight */
-
-    --text-size: 1rem;
-    /* pour le texte */
-    --title-size: 0.9rem;
-    /* pour les titres ( 0.9 rem d'un h1 par exemple) */
-    --font-text-weight: bold;
-    --font-title-weight: bold;
-    /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
-
-    --border-radius: 25px;
-    --box-shadow: 0 3px 7px var(--color2);
+p{
+    font-size: 1.5rem;
+    font-style: italic ;
 }
 
+ul{
+    font-size: 1.5rem;
+    padding-left : 0;
+}
 
-/* GENERAL */
+li{
+    list-style-type: none;
 
-header {}
+}
 
-nav {}
+li i{
+    padding: 10px;
+}
 
+h2{
+    font-size: 3rem;
+    font-weight : bold ;
+}
 
-main {}
+.slider {
+    width: 350px;
+    margin: 0 auto 20px;
+    text-align: justify;
+}
 
-footer {}
+.slider .pictures {
+    position: relative;
+    height: 250px;
+}
 
+.slider .pictures img {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
 
-/* RESPONSIVE */
+.slider .pictures img.shown {
+    opacity: 1;
+}
 
-/* Standards Breakpoints
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV */
+.prev:before,
+.next:before {
+  color: #587B7F ;
+  font-size: 80px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
 
+.prev:before {
+  content: '<';
+  left: 0;
+}
 
-/* MOBILE FIRST (max 360px) */
-@media screen and (max-width: 360px) {}
+.next:before {
+  content: '>';
+  right: 0;
+}
 
-/* TABLETS / LANDSCAPE PHONE (max 768px) */
-@media screen and (max-width: 768px) {}
-
-
-/* DESKTOP+ (from 1200px) */
-@media screen and (min-width: 1200px) {}
