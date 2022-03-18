@@ -5,7 +5,7 @@
 function redirection()
 {
     duration_in_seconds = 10;
-    time = duration_in_seconds * 1000 - 200;
+    time = duration_in_seconds * 1000 - 100;
 
     setTimeout(function ()
     {
