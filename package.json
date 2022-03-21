@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "w3c-html-validator contact.html"
+    "validate": "w3c-html-validator *.html"
   },
   "repository": {
     "type": "git",

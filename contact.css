@@ -1,50 +1,66 @@
-:root {    
-/* colors et polices*/
-    --main-background-color: #393e41;
-    --color1: #587b7f;
-    --color2: #d8d4d3;
-    --color3: #f1f2eb;
-    --title-font: "Libre Baskerville", serif;
-    --text-font: "Lato", sans-serif;
-/* espacement de lignes et longueur max */ 
-    --main-line-height: 1.4 rem;
-    --main-line-lenght: 25 ch;
-    --margin-mobile: 0px;
-/* police size and weight */  
-    --text-size: 1rem; /* pour le texte */
-    --title-size: 1.5rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
-    --font-text-weight: bold;
-    --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
-    box-sizing: border-box;
+/* DECLARATION DES VALEURS GLOBALES */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  background-color: var(--main-background-color);
+  width: 100vw;
 }
 
-body{
-    margin: var(--margin-mobile);
-    background-color: var(--main-background-color);
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+/* VARIABLES */
+:root {
+  /* colors and fonts*/
+  --main-background-color: #D4D4D4;
+  --color1: #587b7f;
+  --color2: #d8d4d3;
+  --color3: #f1f2eb;
+  --title-font: "Libre Baskerville", serif;
+  --text-font: "Lato", sans-serif; 
+
+  /* espacement de lignes et longueur max */
+
+  --main-line-height: 1.4 rem;
+  --main-line-lenght: 25 ch;
+  --margin-mobile: 0px;
+
+  /* police size and weight */
+
+  --text-size: 1rem; /* pour le texte */
+  --title-size: 2rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
+  --font-text-weight: bold;
+  --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
+
+  /* borders and shadows */
+  --border-radius: 25px;
+  --box-shadow: 0 3px 7px var(--color2);
+}
+
+.justifySection{
+    display: block;
 }
 
 section{
-    margin: auto;
     width: 25rem;
-    height: 6rem;
+    height: 9rem;
 }
 
 section p{
+    margin: 0;
+    text-align: center;
     font: var(--text-font);
     font-size: var(--text-size);
-    color: var(--color2);
     max-height: var(--main-line-height);
     /* line-lenght a chercher */
-}
-
-.liste{
-    height: 13rem;
 }
 
 section > ul{
     font: var(--text-font);
     font-size: var(--text-size);
-    color: var(--color2);
+    color: black;
     max-height: var(--main-line-height);
 }
 
@@ -52,13 +68,21 @@ section h1{
     text-align: center;
     font:var(--title-font);
     font-size: var(--title-size);
-    color: var(--color3);
+    color: var(--color1);
 }
 
+ @media screen and (min-width:800px){
+    .justifySection{
+        display: flex;
+        justify-content: space-around;
+    }
+ }
 
 .imgMap{
     display: flex;
     justify-content: center;
+    margin-top: 13rem;
+
 }
 
 div img{
@@ -74,7 +98,7 @@ form {
 }
 
 .ancre{
-    color: var(--color2);
+    color: black;
 }
 
 input {
@@ -90,12 +114,9 @@ input {
 label{
     font: var(--text-font);
     font-size: var(--text-size);
-    color: var(--color2);
+    color: black;
 }
 
-button{
-    margin-top: 3rem;
-}
 
 #form_button {
     border: 0;
