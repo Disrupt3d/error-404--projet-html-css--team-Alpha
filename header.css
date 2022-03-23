@@ -54,6 +54,7 @@ h6 {
   --border-radius: 25px;
   --box-shadow: 0 3px 7px var(--color2);
 }
+
 header {
   width: 100vw;
   height: 100%;

@@ -1,54 +1,6 @@
-/* DECLARATION DES VALEURS GLOBALES */
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 0.3rem;
-  width: 100vw;
-  font-weight: bold;
-  background-color: var(--main-background-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Libre Baskerville", sans-serif;
-}
-
-/* VARIABLES */
-:root {
-  /* colors and fonts*/
-
-  --main-background-color: #d1d1d1;
-  --color1: #587b7f;
-  --color2: #d8d4d3;
-  --color3: #f1f2eb;
-  /* --title-font: "Libre Baskerville", serif;
-            --text-font: "Lato", sans-serif; */
-
-  /* espacement de lignes et longueur max */
-
-  --main-line-height: 1.4 rem;
-  --main-line-lenght: 25 ch;
-  --margin-mobile: 0px;
-
-  /* police size and weight */
-
-  --text-size: 1rem; /* pour le texte */
-  --title-size: 0.9rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
-  --font-text-weight: bold;
-  --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
-
-  /* borders and shadows */
-  --border-radius: 25px;
-  --box-shadow: 0 3px 7px var(--color2);
-}
 /* DONNEES GLOBALES DU FOOTER */
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
 }
 
