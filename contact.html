@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Contact page</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap" />
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body onload="init()">
+
+  <!-- <body> -->
+
+  <!-- HEADER -->
+  <header>
+    <nav class="main-nav">
+      <a href="#" class="nav-logo"><img src="./asset/newlogo.png" alt="" width="200" /></a>
+      <ul class="menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Nos Sevices</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">La team</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="header-content">
+      <h1>Votre solution digitale sur-mesure.</h1>
+      <img src="./asset/header-content.png" alt="" />
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+
+  <!-- PAGE CONTACT -->
+  <main id="main_contact">
+    <div class="justifySection">
+        <section>
+            <h1>Besoin de plus de renseignements ? </h1>
+            <p>Vous avez une question ? Vous voulez nous rencontrer ?
+            Vous pouvez nous contacter avec le <a class="ancre" href="#nameInput">formulaire</a> en fin de page.</p>
+        </section>
+    
+        <section>
+            <h1> Où nous trouver ? </h1>
+            <p>Vous pouvez nous retrouver dans ces villes :</p>
+            <ul>
+                <li>Benoît à Fontenay le Comte </li>
+                <li>Fabienne Lyon </li>
+                <li>Alex à Avignon</li>
+                <li>Maxime à Dijon</li>
+                <li>Quentin à Tours</li>
+            </ul>
+        </section>
+    </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1sTMOaQs-bSTq8pYyZwYVpde1xJh_PYy8&ehbc=2E312F" width="640" height="480"></iframe>
+        
+            <form>
+                <label for="nameInput">Name :</label>
+                <br>
+                <input type="text" id="nameInput" name="name" />
+                <br><br>
+                <label for="emailInput">Email :</label>
+                <br>
+                <input type="text" id="emailInput" /> 
+                <br><br>
+                <label for="messageInput">Message :</label>
+                <textarea class="inputMessage" id="messageInput" name="message" rows="6" cols="50"></textarea>
+                <button type="submit" form="contact_form" value="Submit" id="form_button" onclick="sent();">
+                    <div class="letter-image">
+                        <div class="animated-mail">
+                            <div class="back-fold"></div>
+                            <div class="letter">
+                                <div class="letter-border"></div>
+                                <div class="letter-title"></div>
+                                <div class="letter-context"></div>
+                                <div class="letter-stamp">
+                                    <div class="letter-stamp-inner"></div>
+                                </div>
+                            </div>
+                            <div class="top-fold"></div>
+                            <div class="body"></div>
+                            <div class="left-fold"></div>
+                        </div>
+                        <div class="shadow"></div>
+                    </div>
+                </button> 
+            </form>
+        </div>
+        
+  </main>
+  <!-- END PAGE CONTACT -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <footer class="footer-main">
+      <div class="footer-left">
+        <span><img src="./asset/newlogo.png" alt="logo" width="50%"></span>
+
+        <p class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Nos services</a>
+          <a href="team.html">La Team</a>
+          <a href="contact.html">contact</a>
+        </p>
+
+        <p class="copyright">Created by error404 © 2022</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="location"><img src="./asset/location-logo.png" width="30" height="30">
+          <p>12 boulevard des chats,<br> 75015 Paris, France.</p>
+        </div>
+
+        <div class="phone">
+          <img src="./asset/logo-phonecall.png" width="30" height="30">
+          <p><i>04.32.16.56.52</i><br> du lundi au vendredi de 9h à 18h.</p>
+        </div>
+
+        <div class="email"><img src="./asset/logo-email.png" width="30" height="30">
+          <p><a href="mailto:contact@error404.com">contact@error404.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-about">
+          <span>A propos d'Error 404</span>
+          Nous sommes une agence web dédiée à la réalisation de votre projet digital. Nous proposons des formules
+          adaptées à vos besoins.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://facebook.com"><img src="./asset/facebook.png" width="30" height="30"></a>
+          <a href="https://twitter.com"><img src="./asset/logo-twitter.png" width="30" height="30"></a>
+          <a href="https://pinterest.com"><img src="./asset/pinterest.png" width="30" height="30"></a>
+          <a href="https://github.com/Disrupt3d"><img src="./asset/logo-github.png" width="30" height="30"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    
+    <script src="redirection.js"></script>
+    <script src="burger.js"></script>
+    <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

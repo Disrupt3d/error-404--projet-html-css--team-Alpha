@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error 404 - Agence Web</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <a href="#" class="nav-logo"
+          ><img src="./asset/newlogo.png" alt="" width="200"
+        /></a>
+        <ul class="menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link">La team</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>Votre solution digitale sur-mesure.</h1>
+        <img src="./asset/header-content.png" alt="" />
+      </div>
+    </header>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

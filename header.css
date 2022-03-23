@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* DECLARATION DES VALEURS GLOBALES */
 body {
   margin: 0;
@@ -56,7 +54,7 @@ h6 {
   --border-radius: 25px;
   --box-shadow: 0 3px 7px var(--color2);
 }
->>>>>>> 8aff8071119e3dba771e7875b935b0281b075b69
+
 header {
   width: 100vw;
   height: 100%;
