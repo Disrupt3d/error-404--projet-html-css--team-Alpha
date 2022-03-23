@@ -5,6 +5,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: var(--main-background-color);
   width: 100vw;
+  list-style-type: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -14,7 +15,7 @@ h1,h2,h3,h4,h5,h6 {
 /* VARIABLES */
 :root {
   /* colors and fonts*/
-  --main-background-color: #D4D4D4;
+  --main-background-color: #D1D1D1;
   --color1: #587b7f;
   --color2: #d8d4d3;
   --color3: #f1f2eb;
@@ -28,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
   --margin-mobile: 0px;
 
   /* police size and weight */
-
+  
   --text-size: 1rem; /* pour le texte */
   --title-size: 2rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
   --font-text-weight: bold;
@@ -41,80 +42,101 @@ h1,h2,h3,h4,h5,h6 {
 
 .justifySection{
     display: block;
+    height: 25rem;
 }
 
 section{
+    margin-top: 2rem;
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     width: 25rem;
-    height: 9rem;
+    height: 20rem;
 }
 
 section p{
-    margin: 0;
-    text-align: center;
+    padding: 1rem;
     font: var(--text-font);
     font-size: var(--text-size);
     max-height: var(--main-line-height);
+    color: var(--color3);
     /* line-lenght a chercher */
 }
 
 section > ul{
+    margin: 0;
+    padding: 1rem;
+    color: var(--color3);
+    list-style-type: none;
     font: var(--text-font);
     font-size: var(--text-size);
-    color: black;
     max-height: var(--main-line-height);
 }
 
-section h1{
+section > h1{
+    color: var(--color2);
     text-align: center;
     font:var(--title-font);
     font-size: var(--title-size);
-    color: var(--color1);
+    width: 25rem;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20rem;
+} 
+
+iframe{
+    width: 30rem;
+    height: 30rem;
 }
 
- @media screen and (min-width:800px){
+@media screen and (min-width:800px){
     .justifySection{
         display: flex;
         justify-content: space-around;
     }
- }
+    .map{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 3rem;
 
-.imgMap{
-    display: flex;
-    justify-content: center;
-    margin-top: 13rem;
-
-}
-
-div img{
-    width: 25rem;
+    }
 }
 
 form {
+    margin: 2rem;
     margin: auto; /* permet de centre  */
-    margin-top: 2rem;
     text-align: center;
-    width: 25rem;
-    height: 25rem;
-}
-
-.ancre{
-    color: black;
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    height: 30rem;
 }
 
 input {
     /* on parametre les input de la page contact et leur style  */
     border-radius: 10px;
+    margin-top: 1rem;
+    width: 15rem;
+    height: 1.5rem;
+    
 }
   
 .inputMessage {
     /* on parametre l'input message de la page contact et son style  */
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 label{
+    padding: auto;
     font: var(--text-font);
     font-size: var(--text-size);
-    color: black;
+    color: var(--color3);
 }
 
 
