@@ -1,20 +1,4 @@
-header {
-    height: 55px;
-    background-color: var(--main-background-color);
-  }
-  
-  nav {}
-  
-  
-  
-  footer {
-    height: 300px;
-    background-color: var(--main-background-color);
-  }
-  
-  
-  
-  
+
   
   main {
   background-color: var(--color3);  
