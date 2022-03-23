@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Acceuil</title>
+    <title>Index</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,68 +17,119 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    
+
 </head>
+
+<!-- <body onload="init()"> -->
 
 <body>
 
     <!-- HEADER -->
-    <header class="top-nav">
-        <div class="logo">
-            <img src="./asset/logo-update.gif" width="250vw" height="200vh">
-        </div>
+    <header id="header_nav">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-logo">
+                <img src="./asset/newlogo.png" alt="logo du site" width="750" height="500"/>
+            </a>
 
-        <input id="menu-toggle" type="checkbox" />
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">La team</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
 
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
-        <ul class="menu">
-            <li><a href="index.html">Accueil</li></a>
-            <li><a href="services.html">Services</li></a>
-            <li><a href="team.html">Team</li></a>
-            <li><a href="contact.html">Contact</li></a>
-        </ul>
+        <article class="header-content">
+            <h1>Votre solution digitale sur-mesure</h1>
+            <img src="./asset/header-content.png" alt="illustation d'ordinateurs" width="690" height="450"/>
+        </article>
     </header>
 
 
-    <!-- MAIN -->
+    <!-- BURGER SCRIPT -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+  
+        hamburger.addEventListener("click", mobileMenu);
+  
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          menu.classList.toggle("active");
+        }
+  
+        const navLink = document.querySelectorAll(".nav-link");
+  
+        navLink.forEach((n) => n.addEventListener("click", closeMenu));
+  
+        function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      </script>
+    <!-- END HEADER -->
+
+
+    <!-- MAIN INDEX -->
     <main id="main_index">
-        <header>
-            <img src=".\asset\présentation.jpg" alt="Baniere" class="baniere">
-    
-        <div class="entete">Error 404 est une agence web spécialisée dans le developpement de sites
-            sur mesure. Composée de 5 membres travaillant en remote où chacun à sa
-            spécialité, elle propose des services tout-compris allant de l’ux/ui design, à
-            l’hébergement de sites.
-            Les valeurs de l’agence sont les suivantes:
-            professionalisme, écoute, bonne humeur et une grande dose de fun. 
-            Error 404 est une agence web spécialisée dans le developpement de sites
-            sur mesure. Composée de 5 membres travaillant en remote où chacun à sa
-            spécialité, elle propose des services tout-compris allant de l’ux/ui design, à
-            l’hébergement de sites.
-            Les valeurs de l’agence sont les suivantes:
-            professionalisme, écoute, bonne humeur et une grande dose de fun.
+
+        <img src=".\asset\nous.jpg" alt="Qui sommes nous" class="who_are_we">
+        <div class="why_us">
+            <h1>Qui sommes nous?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora vitae odit nisi, excepturi ab autem
+                sint animi nihil, possimus non eos enim tempore praesentium omnis nemo quaerat vero repellendus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam id facere aliquam ut vero
+                voluptatum natus cum voluptatibus? Maxime dolorem provident culpa consectetur quis facere dignissimos
+                quae inventore vel?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis sapiente. Exercitationem
+                nobis eos non delectus odio, facilis magnam illo? Cum eveniet ab quia optio, earum necessitatibus sunt
+                voluptas possimus.
+            </p>
         </div>
-        
-        <div class="button">
-        <button class="Devis" type="button">
-                Devis
-            </button>
-        <button class="Equipe" type="button">
-                Equipe
-                </button>
+
+
+        <img src="asset\code_service.jpg" alt="code service" class="code_service">
+        <div class="service">
+            <h1>Nos services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora vitae odit nisi, excepturi ab autem
+                sint animi nihil, possimus non eos enim tempore praesentium omnis nemo quaerat vero repellendus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam id facere aliquam ut vero
+                voluptatum natus cum voluptatibus? Maxime dolorem provident culpa consectetur quis facere dignissimos
+                quae inventore vel?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis sapiente. Exercitationem
+                nobis eos non delectus odio, facilis magnam illo? Cum eveniet ab quia optio, earum necessitatibus sunt
+                voluptas possimus.
+            </p>
         </div>
-    </header>
-    <img src=".\asset\nous.jpg" alt="équipe" class="equipe">
-       <div class="pourquoi_nous">
-           <h1>Qui somme nous?</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora vitae odit nisi, excepturi ab autem sint animi nihil, possimus non eos enim tempore praesentium omnis nemo quaerat vero repellendus.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam id facere aliquam ut vero voluptatum natus cum voluptatibus? Maxime dolorem provident culpa consectetur quis facere dignissimos quae inventore vel?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis sapiente. Exercitationem nobis eos non delectus odio, facilis magnam illo? Cum eveniet ab quia optio, earum necessitatibus sunt voluptas possimus.
+
+
+        <img src="asset\equipe.jpg" alt="Equipe" class="equipe">
+        <div class="team">
+            <h1>Équipe</h1>
+            <p></p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora vitae odit nisi, excepturi ab
+            autem sint animi nihil, possimus non eos enim tempore praesentium omnis nemo quaerat vero repellendus.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam id facere aliquam ut vero
+            voluptatum natus cum voluptatibus? Maxime dolorem provident culpa consectetur quis facere dignissimos quae
+            inventore vel?
+            </p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis sapiente. Exercitationem
+            nobis eos non delectus odio, facilis magnam illo? Cum eveniet ab quia optio, earum necessitatibus sunt
+            voluptas possimus.
         </div>
+
+
+
+
+        </div>
+
+
     </main>
+    <!-- END PAGE INDEX -->
 
 
 

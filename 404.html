@@ -1,116 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <title>404 Error Page</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description"
-        content="This is the page you're redirected to if any problem was encountered during the process or giving you the right page you were looking for.">
+  <title>404 Error Page</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="This is the page you're redirected to if any problem was encountered during the process or giving you the right page you were looking for.">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/404.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/404.css">
 
 </head>
 
 <body onload="redirection()">
-    <!-- <body> -->
 
-    <!-- HEADER -->
-    <header class="top-nav">
-        <div class="logo">
-            <img src="./asset/logo-update.gif" width="250vw" height="200vh">
+<!-- <body> -->
+
+  <header>
+    <nav>
+
+    </nav>
+  </header>
+
+
+  <!-- PAGE 404 -->
+  <main id="main_404">
+    <!-- text -->
+    <h1>
+      <i class="fa-regular fa-face-sad-cry"></i>
+      Oh NOOO...
+      <i class="fa-regular fa-face-sad-cry"></i>
+    </h1>
+
+    <p>Something went wrong, but <strong>no stress</strong>, you will be redirected to the main page.</p>
+
+    <!-- clock -->
+    <div id="container">
+
+      <div class="clock">
+
+        <div class="seconds-container">
+          <div class="seconds"></div>
         </div>
 
-        <input id="menu-toggle" type="checkbox" />
+      </div>
 
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
+    </div>
 
-        <ul class="menu">
-            <li><a href="index.html">Accueil</li></a>
-            <li><a href="services.html">Services</li></a>
-            <li><a href="team.html">Team</li></a>
-            <li><a href="contact.html">Contact</li></a>
+  </main>
+<!-- END PAGE 404 -->
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <section>
+
+      <div class="grid-item">
+
+        <ul id="team_addresses">
+          <li><a href="#">membre 01</a></li>
+          <li><a href="#">membre 02</a></li>
+          <li><a href="#">membre 03</a></li>
+          <li><a href="#">membre 04</a></li>
+          <li><a href="#">membre 05</a></li>
         </ul>
-    </header>
 
+      </div>
 
-    <!-- MAIN 404 -->
-    <main id="main_404">
-        <!-- text -->
-        <h1>
-            <i class="fa-regular fa-face-sad-cry"></i>
-            Oh NOOO...
-            <i class="fa-regular fa-face-sad-cry"></i>
-        </h1>
-
-        <p>Something went wrong, but <strong>no stress</strong>, you will be redirected to the main page.</p>
-
-        <!-- clock -->
-        <div id="container">
-            <div class="clock">
-                <div class="seconds-container">
-                    <div class="seconds"></div>
-                </div>
-            </div>
+      <div class="grid-item">
+        <div id="logo">
+          <img src="" alt="">LOGO
         </div>
-    </main>
 
+        <ul id="socials">
+          <li><i class="fa-brands fa-facebook-square"></i></li>
+          <li><i class="fa-brands fa-twitter-square"></i></li>
+          <li><i class="fa-brands fa-instagram-square"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
 
+      <div class="grid-item">
+        <ul id="links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footercontent">
-            <div class="footer-logo">
-                <img src="./asset/logo-update.gif" width="250vw" height="200vh">
-            </div>
+    </section>
 
-            <div class="social-networks">
-                <div id="twitter"><img src="./asset/twitter.png" width="30" height="30"></div>
-                <div id="facebook"><img src="./asset/facebook.png" width="30" height="30"></div>
-                <div id="instagram"><img src="./asset/instagram.png" width="30" height="30"></div>
-                <div id="pinterest"><img src="./asset/pinterest.png" width="30" height="30"></div>
-            </div>
+  </footer>
+  <!-- END FOOTER -->
 
-            <div class="informations">
-                <div id="mail">
-                    <img src="./asset/email1.png" width="30" height="30">
-                    <p>contact@error404.com</p>
-                </div>
-
-                <div id="phone">
-                    <img src="./asset/phone-call1.png" width="30" height="30">
-                    <p>04.32.16.56.52 du lundi au vendredi de 9h à 18h</p>
-                </div>
-            </div>
-
-            <div class="sitemap">
-                <ul class="links">
-                    <li><a href="index.html">Accueil</li></a>
-                    <li><a href="services.html">Services</li></a>
-                    <li><a href="team.html">Team</li></a>
-                    <li><a href="contact.html">Contact</li></a>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- SCRIPTS -->
-    <script src="script.js"></script>
-    <script src="404.js"></script>
-    <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
-
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
