@@ -1,101 +1,144 @@
-:root {    
-/* colors et polices*/
-    --main-background-color: #393e41;
-    --color1: #587b7f;
-    --color2: #d8d4d3;
-    --color3: #f1f2eb;
-    --title-font: "Libre Baskerville", serif;
-    --text-font: "Lato", sans-serif;
-/* espacement de lignes et longueur max */ 
-    --main-line-height: 1.4 rem;
-    --main-line-lenght: 25 ch;
-    --margin-mobile: 0px;
-/* police size and weight */  
-    --text-size: 1rem; /* pour le texte */
-    --title-size: 1.5rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
-    --font-text-weight: bold;
-    --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
-    box-sizing: border-box;
+/* DECLARATION DES VALEURS GLOBALES */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  background-color: var(--main-background-color);
+  width: 100vw;
+  list-style-type: none;
 }
 
-body{
-    margin: var(--margin-mobile);
-    background-color: var(--main-background-color);
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Libre Baskerville", sans-serif;
 }
 
-section{
-    margin: auto;
-    width: 25rem;
-    height: 6rem;
+/* VARIABLES */
+:root {
+  /* colors and fonts*/
+  --main-background-color: #D1D1D1;
+  --color1: #587b7f;
+  --color2: #d8d4d3;
+  --color3: #f1f2eb;
+  --title-font: "Libre Baskerville", serif;
+  --text-font: "Lato", sans-serif; 
+
+  /* espacement de lignes et longueur max */
+
+  --main-line-height: 1.4 rem;
+  --main-line-lenght: 25 ch;
+  --margin-mobile: 0px;
+
+  /* police size and weight */
+  
+  --text-size: 1rem; /* pour le texte */
+  --title-size: 2rem; /* pour les titres ( 0.9 rem d'un h1 par exemple) */
+  --font-text-weight: bold;
+  --font-title-weight: bold; /* tous les titres doivent être en bold qu'ils soient h1 h2 etc */
+
+  /* borders and shadows */
+  --border-radius: 25px;
+  --box-shadow: 0 3px 7px var(--color2);
 }
 
-section p{
-    font: var(--text-font);
-    font-size: var(--text-size);
-    color: var(--color2);
-    max-height: var(--main-line-height);
-    /* line-lenght a chercher */
-}
-
-.liste{
-    height: 13rem;
-}
-
-section > ul{
-    font: var(--text-font);
-    font-size: var(--text-size);
-    color: var(--color2);
-    max-height: var(--main-line-height);
-}
-
-section h1{
-    text-align: center;
-    font:var(--title-font);
-    font-size: var(--title-size);
-    color: var(--color3);
-}
-
-
-.imgMap{
-    display: flex;
-    justify-content: center;
-}
-
-div img{
-    width: 25rem;
-}
-
-form {
-    margin: auto; /* permet de centre  */
-    margin-top: 2rem;
-    text-align: center;
-    width: 25rem;
+.justifySection{
+    display: block;
     height: 25rem;
 }
 
-.ancre{
+section{
+    margin-top: 2rem;
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 25rem;
+    height: 20rem;
+}
+
+section p{
+    padding: 1rem;
+    font: var(--text-font);
+    font-size: var(--text-size);
+    max-height: var(--main-line-height);
+    color: var(--color3);
+    /* line-lenght a chercher */
+}
+
+section > ul{
+    margin: 0;
+    padding: 1rem;
+    color: var(--color3);
+    list-style-type: none;
+    font: var(--text-font);
+    font-size: var(--text-size);
+    max-height: var(--main-line-height);
+}
+
+section > h1{
     color: var(--color2);
+    text-align: center;
+    font:var(--title-font);
+    font-size: var(--title-size);
+    width: 25rem;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20rem;
+} 
+
+iframe{
+    width: 30rem;
+    height: 30rem;
+}
+
+@media screen and (min-width:800px){
+    .justifySection{
+        display: flex;
+        justify-content: space-around;
+    }
+    .map{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+    }
+}
+
+form {
+    margin: 2rem;
+    margin: auto; /* permet de centre  */
+    text-align: center;
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    height: 30rem;
 }
 
 input {
     /* on parametre les input de la page contact et leur style  */
     border-radius: 10px;
+    margin-top: 1rem;
+    width: 15rem;
+    height: 1.5rem;
+    
 }
   
 .inputMessage {
     /* on parametre l'input message de la page contact et son style  */
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 label{
+    padding: auto;
     font: var(--text-font);
     font-size: var(--text-size);
-    color: var(--color2);
+    color: var(--color3);
 }
 
-button{
-    margin-top: 3rem;
-}
 
 #form_button {
     border: 0;
