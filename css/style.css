@@ -53,8 +53,6 @@ a {
 
 /* HEADER */
 #header_nav {
-  /* width: 100vw; */
-  /* height: 100%; */
   min-height: 20vh;
   background-color: var(--color1);
 }
@@ -63,30 +61,19 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: var(--color1); */
+}
+
+.nav-logo {
+  width: 30%;
 }
 
 .nav-logo img {
-  width: 30%;
+  width: 100%;
   height: auto;
 }
 
 
 /* BURGER MENU */
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--color2);
-}
-
 .menu {
   list-style-type: none;
   display: flex;
@@ -94,11 +81,21 @@ a {
   align-items: center;
   padding-inline-start: 0;
   font-size: var(--text-size);
+  top: 4vh;
+  position: fixed;
+  left: -100%;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.7s;
+  box-shadow: var(--box-shadow);
 }
 
 .nav-item {
   padding: 0 2.2rem;
   margin-left: 0rem;
+  font-size: 10px;
+  margin: 2.2rem 0rem;
 }
 
 .nav-link {
@@ -111,53 +108,122 @@ a {
 }
 
 
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color2);
+}
+
+
+
+
+
+
+.menu {
+  position: fixed;
+  left: -100%;
+  top: 5vh;
+  flex-direction: column;
+  background-color: var(--color1);
+  width: 100%;
+  text-align: center;
+  transition: 0.7s;
+  box-shadow: var(--box-shadow);
+}
+.header-content img {
+  padding-bottom: 0rem;
+  width: 50vw;
+  height: 35vh;
+}
+.header-content h1 {
+  font-size: 32px;
+  padding: 2rem 1rem;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-logo img {
+  width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TITRE + IMG HEADER */
 .header-content {
   display: flex;
   justify-content: space-around;
   height: 40vh;
   background-color: var(--color1);
+  justify-content: space-evenly;
+  height: 20vh;
 }
 
 .header-content img {
   padding-bottom: 2rem;
   width: 35%;
   height: 90%;
-}
-
-.header-content h1 {
-  padding: 3rem 0 rem 3rem;
-  width: 30%;
-  color: var(--color2);
-  margin: 0;
-  font-size: 50px;
-  font-family: "libre baskerville";
-}
-
-.menu {
-  top: 4vh;
-}
-
-.nav-item {
-  font-size: 10px;
-  margin: 2.2rem 0rem;
-}
-.header-content img {
   width: 50%;
   height: 70%;
   padding-bottom: 1rem;
 }
 
-.header-content {
-  justify-content: space-evenly;
-  height: 20vh;
-}
 .header-content h1 {
+  width: 30%;
+  color: var(--color2);
+  /* font-size: 50px; */
+  font-family: "libre baskerville";
+
   padding: 3rem 0 1rem 0.5rem;
   margin: 0;
   font-size: 12px;
-  font-family: "libre baskerville";
-  color: var(--color2);
   font-weight: bold;
 }
 
@@ -190,7 +256,7 @@ a {
   
 
   /* passage en responsive du header point de rupture smartphone */
-  
+/*   
   @media screen and (max-width: 520px) {
     .logo {
       margin-top: 2rem;
@@ -242,14 +308,13 @@ a {
       background-color: var(--color1);
     }
     #menu-toggle:checked ~ .menu li {
-      /* largeur des li dans menu deroulant */
       box-shadow: var(--box-shadow);
       height: 1.5rem;
       padding: 1.2em;
     }
   }
   
-
+ */
 
 
 
@@ -487,56 +552,7 @@ a {
 
 /* TEST MENU BURGER */
 
-.menu {
-  position: fixed;
-  left: -100%;
-  top: 5vh;
-  flex-direction: column;
-  background-color: var(--color1);
-  width: 100%;
-  text-align: center;
-  transition: 0.7s;
-  box-shadow: var(--box-shadow);
-}
-.header-content img {
-  padding-bottom: 0rem;
-  width: 50vw;
-  height: 35vh;
-}
-.header-content h1 {
-  font-size: 32px;
-  padding: 2rem 1rem;
-}
 
-.menu.active {
-  left: 0;
-}
-
-.nav-item {
-  margin: 2.5rem 0;
-}
-
-.hamburger {
-  display: block;
-  cursor: pointer;
-  padding-right: 2rem;
-  font-weight: bold;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-.nav-logo img {
-  width: 20%;
-}
 
 /* END TEST MENU RUBGER */
 
