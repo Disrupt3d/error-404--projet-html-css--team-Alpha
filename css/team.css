@@ -57,7 +57,7 @@
   color: var(--color1);
   letter-spacing: 0.3rem;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--color1);
   margin-bottom: 2rem;
 }
@@ -231,7 +231,7 @@ button:hover {
 
 .article-content1 .btn-one {
   width: 50%;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
   text-transform: uppercase;
 }
 
