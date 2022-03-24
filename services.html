@@ -20,27 +20,37 @@
     
 </head>
 
-<body>
+<!-- <body onload="init()"> -->
 
-    <!-- HEADER -->
-    <header class="top-nav">
-        <div class="logo">
-            <img src="./asset/logo-update.gif" width="250vw" height="200vh">
-        </div>
+    <body>
 
-        <input id="menu-toggle" type="checkbox" />
-
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-
-        <ul class="menu">
-            <li><a href="index.html">Accueil</li></a>
-            <li><a href="services.html">Services</li></a>
-            <li><a href="team.html">Team</li></a>
-            <li><a href="contact.html">Contact</li></a>
-        </ul>
-    </header>
+        <!-- HEADER -->
+        <header>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-logo">
+                    <img src="./asset/newlogo.png" alt="" width="200" />
+                </a>
+    
+                <ul class="menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">La team</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+    
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+            <div class="header-content">
+                <h1>Votre solution digitale sur-mesure.</h1>
+                <img src="./asset/header-content.png" alt="" />
+            </div>
+        </header>
+        <!-- END HEADER -->
 
 
     <!-- MAIN -->
