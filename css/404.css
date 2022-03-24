@@ -1,10 +1,8 @@
-main {
-  background-color: var(--color3);
-
+main#main_404 {
+  height: 80vh;
 }
 
 /* TEXT */
-
 #main_404 h1,
 #main_404 p {
   text-align: center;
@@ -15,10 +13,17 @@ main {
   padding: 10px;
 }
 
+#main_404 p {
+  font-size: larger;
+}
+
 #main_404 strong {
   text-transform: uppercase;
 }
 
+footer {
+  height: 20vh;
+}
 
 
 /* HORLOGE */
