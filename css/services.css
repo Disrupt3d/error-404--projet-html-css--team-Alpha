@@ -1,144 +1,92 @@
-/* /déclaration valeurs globales/ */
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  background-color: var(--main-background-color);
-  width: 100vw;
+
+/************* SERVICES CARDS **************/
+#services_cards {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  justify-content: space-around;
+  margin: 10px;
+ 
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Libre Baskerville", sans-serif;
-}
-
-/* / VARIABLES / */
-:root {
-  /* / colors and fonts/ */
-
-  --main-background-color: #393e41;
-  --color1: #587b7f;
-  --color2: #d8d4d3;
-  --color3: #f1f2eb;
-  --title-font: "Libre Baskerville", serif;
-        --text-font: "Lato", sans-serif; 
-
-  /* / espacement de lignes et longueur max / */
-
-  --main-line-height: 1.4 rem;
-  --main-line-lenght: 25 ch;
-  --margin-mobile: 0px;
-
-  /* / police size and weight / */
-
-  --text-size: 1rem;
-  --title-size: 0.9rem;
-  --font-text-weight: bold;
-  --font-title-weight: bold; 
-
-  /* / borders and shadows */
-  --border-radius: 25px;
-  --box-shadow: 0 3px 7px var(--color2);
-}
-
-
-    .banner {
-        display: block;
-            margin: 0 auto;
-            max-width: 100%;
-}   
-    
-
-main {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-around ;
-    padding: 2rem;
-}  
-
-section{
-    border: 2px solid #587B7F ;
-    border-radius: 5px;
-    text-align: center;
-    flex : 1 1 0 ;
-    margin : 3rem ;
-    padding: 1rem;
-  }
 
 h1{
-    font-size: 3rem;
-    font-weight : bold ;
+    color: var(--color1);
+    grid-column-start: 2;
+    text-align: center;
 }
 
-p{
-    font-size: 1.5rem;
-    font-style: italic ;
+
+.prices {
+  grid-row-start: 2 ;
+  align-items: baseline;
+  border: 2px solid #587B7F;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--color1);
+  text-align: center;
+  color: var(--color2);
+  margin: 20px;
+  }
+
+.prices>h2 {
+  width: initial;
 }
 
-ul{
-    font-size: 1.5rem;
-    padding-left : 0;
+.prices>p {
+  padding: 10px;
 }
 
-li{
-    list-style-type: none;
-
+.prices ul {
+  padding-left: 0;
 }
 
-li i{
-    padding: 10px;
+.prices li {
+    list-style: none;
+  }
+
+.prices i {
+  padding-right: 10px;
+  padding: 10px;
 }
 
-h2{
-    font-size: 3rem;
-    font-weight : bold ;
+
+/********** SLIDER *************/
+
+#slider { 
+  overflow: hidden; 
+  width : auto;
+  height: 400px;
+  margin-left : 30%;
+  margin-right : 30%;
+  margin-top: 100px;
+  position: relative;
 }
 
-.slider {
-    width: 350px;
-    margin: 0 auto 20px;
-    text-align: justify;
-}
 
-.slider .pictures {
-    position: relative;
-    height: 250px;
-}
-
-.slider .pictures img {
-    width: 80%;
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.slider .pictures img.shown {
-    opacity: 1;
-}
-
-.prev:before,
-.next:before {
-  color: #587B7F ;
-  font-size: 80px;
-  position: absolute;
-  top: 35%;
-  cursor: pointer;
-}
-
-.prev:before {
-  content: '<';
+#slider>figure { 
+  position: relative;
+  width: 500%;
+  margin : 0;
   left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 40s slidy infinite; 
 }
+#slider>figure>img { 
+  width: 20%;
+   float: left;/* permet de faire defiler les slides de droite a gauche*/
+ }
 
-.next:before {
-  content: '>';
-  right: 0;
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
 }
-
