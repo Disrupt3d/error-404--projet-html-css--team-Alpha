@@ -171,20 +171,17 @@ a {
 
 @media screen and (min-width: 601px) and (max-width: 900px) {}
 
-@media screen and (min-width: 901px) {}
+@media screen and (min-width: 901px) {
+  .header-content img {
+    width: 40%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+}
 
 
 
-
-/**************************** MAIN ***********************/
-
-
-/**************************** RESPONSIVE MAIN ************/
-@media screen and (min-width: 401px) and (max-width: 600px) {}
-
-@media screen and (min-width: 601px) and (max-width: 900px) {}
-
-@media screen and (min-width: 901px) {}
 
 
 
@@ -226,10 +223,12 @@ a {
 }
 
 .footer-logo img {
-  /* padding-right: 13rem; */
   padding: 10px;
   width: 30%;
   height: auto;
+
+
+  /* padding-right: 13rem; */
 }
 
 .social-networks {
@@ -326,12 +325,11 @@ a {
 }
 
 .informations p {
-
   color: var(--color2);
+
+
   /* display: none; */
 }
-
-
 
 
 .footer-about {
@@ -370,6 +368,8 @@ a {
   display: flex;
   padding-left: 0;
   justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
 
   /* padding: 0;
   margin: 0;
@@ -426,9 +426,80 @@ a {
 /**************************** RESPONSIVE FOOTER **********/
 @media screen and (min-width: 401px) and (max-width: 600px) {}
 
-@media screen and (min-width: 601px) and (max-width: 900px) {}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .footer-about {
+    display: initial;
+    order: 2;
+    color: var(--color2);
+  }
 
-@media screen and (min-width: 901px) {}
+}
+
+@media screen and (min-width: 901px) {
+  .footercontent {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    /* flex: 1; */
+    height: 50%;
+    width: 33%;
+    order: 1;
+    margin: auto 0;
+  }
+
+  .footer-logo img {
+    width: 80%;
+    height: auto;
+  }
+
+  .social-networks {
+    /* flex: 1 ; */
+    height: 50%;
+    /* width: 33%; */
+    order: 5;
+    /* margin-left: 31%; */
+    /* justify-self: flex-end; */
+    align-self: center;
+    /* margin-right: 30%; */
+  }
+
+  .informations {
+    /* flex: 1 ; */
+    height: 50%;
+    width: 33%;
+    order: 3;
+  }
+
+  .footer-about {
+    /* flex: 1 ; */
+    display: initial;
+    color: var(--color2);
+    height: 50%;
+    width: 33%;
+    order: 2;
+  }
+
+  .sitemap {
+    /* flex: 1 ; */
+    height: 50%;
+    width: 33%;
+    order: 4;
+    /* margin: auto 0; */
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .links li {
+    padding: 5px 0;
+  }
+}
 
 
 
