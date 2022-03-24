@@ -169,6 +169,7 @@ header {
 .header-content h1 {
     width: 30%;
     font-size: 1.2rem;
+    color: var(--color2);
 }
 
 
