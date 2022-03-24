@@ -1,74 +1,93 @@
- 
-/*Pourquoi nous*/
-
+/*Qui sommes nous*/
 .who_are_we {
+    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
     float: left;
-    width: 700px;
+    margin: 10px 50px 20px 0;
+    width: 30%;
     height: 400px;
-    padding: 50px
+    border-radius: 25px
 }
 
-.why_us{
-    font-size: 25PX;
-    text-align: center;
-    padding: 50px;
-    
+.why_us>p {
+
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0%;
+}
+
+.why_us>h1 {
+    color: var(--color1);
+    display: flex;
+    padding: 2%;
 }
 
 /*Service*/
-.code_service{
+.code_service {
+    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
     float: right;
-    width: 700px;
+    margin: 10px 50px 20px 0;
+    width: 30%;
     height: 400px;
-    padding: 50px
+    border-radius: 25px;
 }
-.service{
-    font-size: 25PX;
-    text-align: center;
-    padding: 50px;
+
+.service>p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0%;
+}
+
+.service>h1 {
+    display: flex;
+    padding: 3%;
+    color: var(--color1);
 }
 
 /*equipe*/
 .equipe {
+    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
     float: left;
-    width: 700px;
+    margin: 10px 50px 20px 0;
+    width: 30%;
     height: 400px;
-    padding: 50px
-}
-.team{
-    font-size: 25PX;
-    text-align: center;
-    padding: 50px;
-    
+    border-radius: 25px
 }
 
-p{
-
+.team>p {
+    margin: 10px 50px 20px 0;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0%;
 }
 
-        body {
-        margin: 0;
-        box-sizing: border-box;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 0.3rem;
-        width: 100vw;
-        font-weight: bold;
-        background-color: var(--main-background-color);
-      }
-     
-h1{
-        font-family: "Libre Baskerville", sans-serif;
-        font-size: 1rem;
-        text: var(--color1);
-        --font-text-weight: bold;
-    --font-title-weight: bold;
+.team>h1 {
+    display: flex;
+    padding: 2%;
+    color: var(--color1);
 }
 
-    
-      
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.3rem;
+    width: 100vw;
+    font-weight: bold;
+    background-color: var(--main-background-color);
+}
 
-/*desktop mode */
-    @media screen and (min-width: 600px) and (max-width: 900px) {}
-    @media screen and (min-width: 450px) and (max-width: 600px) {}
-    @media screen and (max-width: 450px) {}
+/*RESPONSIVE*/
 
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    .who_are_we {
+        width: 100%;
+    }
+
+    .code_service {
+        width: 100%;
+    }
+
+    .equipe {
+        width: 100%;
+    }
+}
