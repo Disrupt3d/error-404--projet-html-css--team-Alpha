@@ -1,106 +1,74 @@
-.baniere {
-    display: block;
-        margin: 0 auto;
-        max-width: 100%;
-}
-
+ 
 /*Pourquoi nous*/
-.equipe {
+
+.who_are_we {
     float: left;
     width: 700px;
     height: 400px;
     padding: 50px
 }
 
-/*text*/
-h1{
-    text-align: center;
-}
-
-.pourquoi_nous{
+.why_us{
     font-size: 25PX;
-    text-align: end;
+    text-align: center;
     padding: 50px;
     
 }
-   
-   body{
-       background-color: #393E41;
-   }
-   
 
-/*texte de l'entete*/
- .entete{
-     font-size: 25PX;
-     text-align: justify;
-     padding: 40px;
+/*Service*/
+.code_service{
+    float: right;
+    width: 700px;
+    height: 400px;
+    padding: 50px
+}
+.service{
+    font-size: 25PX;
+    text-align: center;
+    padding: 50px;
+}
+
+/*equipe*/
+.equipe {
+    float: left;
+    width: 700px;
+    height: 400px;
+    padding: 50px
+}
+.team{
+    font-size: 25PX;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+p{
+
+}
+
+        body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 0.3rem;
+        width: 100vw;
+        font-weight: bold;
+        background-color: var(--main-background-color);
+      }
      
+h1{
+        font-family: "Libre Baskerville", sans-serif;
+        font-size: 1rem;
+        text: var(--color1);
+        --font-text-weight: bold;
+    --font-title-weight: bold;
+}
 
- }  
-  
+    
+      
 
-/*Boutons devis*/
-
-      .Devis {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 90px;
-        font-size: 5rem;
-        text-align: center;
-        color: rgb(7, 7, 7);
-        text-shadow: 1px 1px 1px rgb(248, 248, 248);
-        border-radius: 10px;
-        border: 3px solid rgb(0, 112, 112);
-        background-color: grey(220, 0, 0, 1);
-        background-image: linear-gradient(to top left,
-                                          rgba(0, 0, 0, .2),
-                                          rgba(0, 0, 0, .2) 30%,
-                                          rgba(0, 0, 0, 0));
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                    inset -2px -2px 3px rgba(0, 0, 0, .6);
-    }
-    
-    .Devis:hover {
-        background-color: grey(255, 0, 0, 1);
-    }
-    
-    .Devis:active {
-        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                    inset 2px 2px 3px rgba(0, 0, 0, .6);
-    }
-    
-    
-/*Bouton equipe*/
-    .Equipe {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 90px;
-        font-size: 5rem;
-        text-align: center;
-        color: rgb(5, 5, 5);
-        text-shadow: 1px 1px 1px rgb(252, 251, 251);
-        border-radius: 10px;
-        border: 3px solid rgb(0, 112, 112);
-        background-color: grey(220, 0, 0, 1);
-        background-image: linear-gradient(to top left,
-                                          rgba(0, 0, 0, .2),
-                                          rgba(0, 0, 0, .2) 30%,
-                                          rgba(0, 0, 0, 0));
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                    inset -2px -2px 3px rgba(0, 0, 0, .6);
-                    }
-     .Equipe:hover {
-        background-color: grey(255, 0, 0, 1);
-    }
-    
-    .Equipe:active {
-        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                    inset 2px 2px 3px rgba(0, 0, 0, .6);
-    }
-    
-/*position bouton*/
-    .button {
-        display: flex;
-        justify-content: space-around;
-    }
+/*desktop mode */
+    @media screen and (min-width: 600px) and (max-width: 900px) {}
+    @media screen and (min-width: 450px) and (max-width: 600px) {}
+    @media screen and (max-width: 450px) {}
 
