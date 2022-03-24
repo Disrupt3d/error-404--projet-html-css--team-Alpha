@@ -1,0 +1,75 @@
+ 
+/*Pourquoi nous*/
+
+.who_are_we {
+    float: left;
+    width: 700px;
+    height: 400px;
+    padding: 50px
+}
+
+.why_us{
+    font-size: 25PX;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+/*Service*/
+.code_service{
+    float: right;
+    width: 700px;
+    height: 400px;
+    padding: 50px
+}
+.service{
+    font-size: 25PX;
+    text-align: center;
+    padding: 50px;
+}
+
+/*equipe*/
+.equipe {
+    float: left;
+    width: 700px;
+    height: 400px;
+    padding: 50px
+}
+.team{
+    font-size: 25PX;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+p{
+
+}
+
+        body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 0.3rem;
+        width: 100vw;
+        font-weight: bold;
+        background-color: var(--main-background-color);
+      }
+     
+h1{
+        font-family: "Libre Baskerville", sans-serif;
+        font-size: 1rem;
+        text: var(--color1);
+        --font-text-weight: bold;
+    --font-title-weight: bold;
+}
+
+    
+      
+
+/*desktop mode */
+    @media screen and (min-width: 600px)(max-width: 900px) {
+    @media screen and (min-width: 450px) and (max-width: 600px) {
+    @media screen and (max-width: 450px) {
+
+

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Index</title>
+    <title>Error 404 - Agence Web</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +50,33 @@
             <img src="./asset/header-content.png" alt="illustation d'ordinateurs" width="690" height="450" />
         </article>
     </header>
+
+
+<!-- SCRIPT BURGER -->
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      menu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+<!-- END SCRIPT BURGER -->
     <!-- END HEADER -->
+
+
 
 
     <!-- PAGE INDEX -->
@@ -105,50 +131,61 @@
 
 
     <!-- FOOTER -->
-    <footer class="footercontent">
-        <a href="index.html" class="footer-logo">
-            <img src="./asset/newlogo.png" alt="logo du site" width="750" height="500" />
-        </a>
+ <footer>
+        <footer class="footer-main">
 
-        <div class="social-networks">
-            <a href="https://facebook.com"><img src="./asset/facebook.png" width="512" height="512"></a>
-            <a href="https://twitter.com"><img src="./asset/logo-twitter.png" width="512" height="512"></a>
-            <a href="https://pinterest.com"><img src="./asset/pinterest.png" width="512" height="512"></a>
-            <a href="https://github.com/Disrupt3d"><img src="./asset/logo-github.png" width="512" height="512"></a>
-        </div>
+			<div class="footer-left">
 
-        <div class="informations">
-            <div class="location">
-                <img src="./asset/location-logo.png" width="30" height="30">
-                <p>12 boulevard des chats,<br> 75015 Paris, France.</p>
-            </div>
+				<span><img src="./asset/newlogo.png" alt="logo" width="50%"></span>
 
-            <a href="mailto:contact@error404.com" id="mail">
-                <img src="./asset/email1.png" width="512" height="512">
-                <p>contact@error404.com</p>
-            </a>
+				<p class="footer-links">
+					<a href="index.html">Accueil</a>
+					|
+					<a href="services.html">Nos services</a>
+					|
+					<a href="team.html">La Team</a>
+					|
+					<a href="contact.html">contact</a>
+					
+				</p>
 
-            <a href="tel:+33659372332" id="phone">
-                <img src="./asset/phone-call1.png" width="512" height="512">
-                <p>06.59.372.332 du lundi au vendredi de 9h à 18h</p>
-            </a>
-        </div>
+				<p class="copyright">Created by error404 © 2022</p>
+			</div>
 
-        <div class="footer-about">
-            <span>A propos d'Error 404</span>
-            <p>Nous sommes une agence web dédiée à la réalisation de votre projet digital. Nous proposons des formules
-                adaptées à vos besoins.</p>
-        </div>
+			<div class="footer-center">
 
-        <div class="sitemap">
-            <ul class="links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
+
+                    <div class="location"><img src="./asset/location-logo.png" width="30" height="30">
+                        <p>12 boulevard des chats,<br>  75015 Paris, France.</p></div>
+                    
+                    <div class="phone">
+                        <img src="./asset/logo-phonecall.png" width="30" height="30"><p><i>04.32.16.56.52</i><br> du lundi au vendredi de 9h à 18h.</p></div>
+                    
+                        <div class="email"><img src="./asset/logo-email.png" width="30" height="30">
+                            <p><a href="mailto:contact@error404.com">contact@error404.com</a></p></div>
+                            
+        				</div>
+
+
+			<div class="footer-right">
+
+				<p class="footer-about">
+					<span>A propos d'Error 404</span>
+					Nous sommes une agence web dédiée à la réalisation de votre projet digital. Nous proposons des formules adaptées à vos besoins.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://facebook.com"><img src="./asset/facebook.png" width="30" height="30"></a>
+					<a href="https://twitter.com"><img src="./asset/logo-twitter.png" width="30" height="30"></a>
+					<a href="https://pinterest.com"><img src="./asset/pinterest.png" width="30" height="30"></a>
+					<a href="https://github.com/Disrupt3d"><img src="./asset/logo-github.png" width="30" height="30"></a>
+
+				</div>
+
+			</div>
+
+		</footer>
     <!-- END FOOTER -->
 
 
