@@ -2,6 +2,50 @@
 <html lang="en">
 
 <head>
+    <title>contact</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="160carac">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="./asset/logo-update.gif" width="250vw" height="200vh">
+        </div>
+
+        <input id="menu-toggle" type="checkbox" />
+
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+
+        <ul class="menu">
+            <li><a href="index.html">Accueil</li></a>
+            <li><a href="services.html">Services</li></a>
+            <li><a href="team.html">Team</li></a>
+            <li><a href="contact.html">Contact</li></a>
+        </ul>
+    </header>
+
+
+    <!-- MAIN -->
+    <main id="main_contact">
+        <section class="renseignement">
 
   <title>Contact page</title>
 
@@ -70,6 +114,102 @@
             Vous pouvez nous contacter avec le <a class="ancre" href="#nameInput">formulaire</a> en fin de page.</p>
         </section>
     
+        <section class="liste">
+            <h1> Où nous trouver ? </h1>
+            <p>Vous pouvez nous retrouver dans ces villes :</p>
+            <ul>
+                <li>Benoit à <a class="ancre" href="https://www.google.com/maps/place/85200+Fontenay-le-Comte/@46.4587083,-0.8237517,13z/data=!3m1!4b1!4m5!3m4!1s0x4806c331dd05bcfd:0xd439043c678c01a9!8m2!3d46.465972!4d-0.8065"> Fontenay le Comte </a></li>
+                <li>Fabienne à <a class="ancre" href="https://www.google.com/maps/place/Lyon/@45.7580052,4.8001108,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659"> Lyon </a></li>
+                <li>Alex à <a class="ancre" href="https://www.google.com/maps/place/Avignon/@43.9416582,4.7632179,12z/data=!3m1!4b1!4m5!3m4!1s0x12b5eb8739bc9d07:0xe6429b6efa1d7b36!8m2!3d43.949317!4d4.805528"> Avignon </a></li>
+                <li>Maxime à <a class="ancre" href="https://www.google.com/maps/place/21000+Dijon/@47.3319225,4.9971998,13z/data=!3m1!4b1!4m5!3m4!1s0x47f29d8ceffd9675:0x409ce34b31458d0!8m2!3d47.322047!4d5.04148">Dijon</a></li>
+                <li>Quentin à <a class="ancre" href="https://www.google.com/maps/place/Tours/@47.3943218,0.6599232,13z/data=!3m1!4b1!4m5!3m4!1s0x47fcd5b34a979a55:0x40dc8d705388430!8m2!3d47.394144!4d0.68484">Tours</a></li>
+            </ul>
+        </section>
+    
+        <div class="imgMap">
+            <img src="asset/mapLocation.png" alt="carte de france ou vous pouvez nous trouver.">
+        </div>
+        
+        <form>
+            <label for="nameInput">Name :</label>
+            <br>
+            <input type="text" id="nameInput" name="name" />
+            <br><br>
+            <label for="emailInput">Email :</label>
+            <br>
+            <input type="text" id="emailInput" /> 
+            <br><br>
+            <label for="messageInput">Message :</label>
+            <textarea class="inputMessage" id="messageInput" name="message" rows="6" cols="50"></textarea>
+            <button type="submit" form="contact_form" value="Submit" id="form_button" onclick="sent();">
+                <div class="letter-image">
+                    <div class="animated-mail">
+                        <div class="back-fold"></div>
+                        <div class="letter">
+                            <div class="letter-border"></div>
+                            <div class="letter-title"></div>
+                            <div class="letter-context"></div>
+                            <div class="letter-stamp">
+                                <div class="letter-stamp-inner"></div>
+                            </div>
+                        </div>
+                        <div class="top-fold"></div>
+                        <div class="body"></div>
+                        <div class="left-fold"></div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </button> 
+        </form>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footercontent">
+            <div class="footer-logo">
+                <img src="./asset/logo-update.gif" width="250vw" height="200vh">
+            </div>
+
+            <div class="social-networks">
+                <div id="twitter"><img src="./asset/twitter.png" width="30" height="30"></div>
+                <div id="facebook"><img src="./asset/facebook.png" width="30" height="30"></div>
+                <div id="instagram"><img src="./asset/instagram.png" width="30" height="30"></div>
+                <div id="pinterest"><img src="./asset/pinterest.png" width="30" height="30"></div>
+            </div>
+
+            <div class="informations">
+                <div id="mail">
+                    <img src="./asset/email1.png" width="30" height="30">
+                    <p>contact@error404.com</p>
+                </div>
+
+                <div id="phone">
+                    <img src="./asset/phone-call1.png" width="30" height="30">
+                    <p>04.32.16.56.52 du lundi au vendredi de 9h à 18h</p>
+                </div>
+            </div>
+
+            <div class="sitemap">
+                <ul class="links">
+                    <li><a href="index.html">Accueil
+                    </li></a>
+                    <li><a href="services.html">Services
+                    </li></a>
+                    <li><a href="team.html">Team</li>
+                    </a>
+                    <li><a href="contact.html">Contact
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
         <section>
             <h1> Où nous trouver ? </h1>
             <p>Vous pouvez nous retrouver dans ces villes :</p>
