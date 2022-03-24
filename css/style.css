@@ -250,7 +250,7 @@ footer {
     box-shadow: var(--box-shadow);
     /* width: 100vw; */
     padding-top: 2rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-bottom: 2rem;
 }
 
@@ -350,7 +350,7 @@ footer {
 
     .footer-left {
         display: block;
-        width: 100vw;
+        /* width: 100vw; */
         margin-bottom: 1rem;
         text-align: center;
         padding: 0;
@@ -373,7 +373,7 @@ footer {
 
     .footer-center {
         display: block;
-        width: 100vw;
+        /* width: 100vw; */
         margin-bottom: 5rem;
         text-align: center;
         padding: 0;
@@ -416,7 +416,7 @@ footer {
 
     .footer-right {
         display: block;
-        width: 100vw;
+        /* width: 100vw; */
         margin-bottom: 5rem;
         text-align: center;
         padding: 0;
