@@ -1,6 +1,5 @@
 .justifySection {
     display: block;
-    height: 25rem;
     height: 45rem;
 }
 
@@ -10,7 +9,7 @@ section {
     background-color: var(--color1);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    width: 25rem;
+    max-width: 25rem;
     height: 20rem;
 }
 
@@ -48,14 +47,22 @@ section>h1 {
     flex-direction: column;
     justify-content: center;
     height: 70rem;
-
-
 }
 
 iframe {
     margin: auto;
-    width: 30rem;
+    max-width: 30rem;
     height: 30rem;
+}
+
+@media screen and (max-width:400px) {
+iframe {
+    max-width: 350px;
+}
+
+textarea {
+    width: 100%;
+}
 }
 
 @media screen and (min-width:800px) {
@@ -83,7 +90,8 @@ form {
     background-color: var(--color1);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    width: 30rem;
+    max-width: 30rem;
+    width: 100%;
     height: 30rem;
 }
 
@@ -100,7 +108,7 @@ input {
     /* on parametre l'input message de la page contact et son style  */
     border-radius: 10px;
     margin-top: 1rem;
-    width: 28rem;
+    max-width: 28rem;
     height: 8rem;
 }
 
@@ -111,7 +119,28 @@ label {
     color: var(--color3);
 }
 
+textarea {
+    width: 30rem;
+}
 
+
+
+@media screen and (min-width:900px) {
+    form, iframe {
+        width: 45%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* ENVELOPPE DU FORM */
 #form_button {
     border: 0;
     padding: 0;
