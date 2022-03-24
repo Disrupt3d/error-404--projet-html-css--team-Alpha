@@ -50,30 +50,6 @@
             <img src="./asset/header-content.png" alt="illustation d'ordinateurs" width="690" height="450" />
         </article>
     </header>
-
-
-<!-- SCRIPT BURGER -->
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-      hamburger.classList.toggle("active");
-      menu.classList.toggle("active");
-    }
-
-    const navLink = document.querySelectorAll(".nav-link");
-
-    navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-    function closeMenu() {
-      hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
-    }
-  </script>
-<!-- END SCRIPT BURGER -->
     <!-- END HEADER -->
 
 
@@ -200,7 +176,7 @@
 
 
     <!-- SCRIPTS -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/72062ec1d3.js" crossorigin="anonymous"></script>
 
 </body>
