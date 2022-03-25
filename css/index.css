@@ -1,93 +1,178 @@
-/*Qui sommes nous*/
-.who_are_we {
-    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
-    float: left;
-    margin: 10px 50px 20px 0;
+hr {
     width: 30%;
-    height: 400px;
-    border-radius: 25px
-}
-
-.why_us>p {
-
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 0%;
-}
-
-.why_us>h1 {
-    color: var(--color1);
-    display: flex;
-    padding: 2%;
-}
-
-/*Service*/
-.code_service {
-    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
-    float: right;
-    margin: 10px 50px 20px 0;
+    background-color: var(--color1);
+    height: 8px;
+    text-align: center;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .service hr {
     width: 30%;
-    height: 400px;
-    border-radius: 25px;
-}
-
-.service>p {
-    font-size: 1.5rem;
-    text-align: left;
-    padding: 0%;
-}
-
-.service>h1 {
+    background-color: var(--color2);
+    height: 8px;
+    text-align: center;
+    border: none;
+  }
+  .why_us {
     display: flex;
-    padding: 3%;
-    color: var(--color1);
-}
-
-/*equipe*/
-.equipe {
-    filter: drop-shadow(0 0 0.75rem rgb(38, 80, 67));
-    float: left;
-    margin: 10px 50px 20px 0;
-    width: 30%;
-    height: 400px;
-    border-radius: 25px
-}
-
-.team>p {
-    margin: 10px 50px 20px 0;
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 0%;
-}
-
-.team>h1 {
+    justify-content: space-between;
+    background-color: var(--color3);
+    height: 600px;
+  }
+  .why_us img {
+    width: 600px;
+    box-shadow: var(--box-shadow);
+  }
+  .why_us h1 {
+    color: #587b7f;
+  }
+  .why_us p {
+    color: #587b7f;
+  }
+  
+  .service {
     display: flex;
-    padding: 2%;
+    justify-content: space-between;
+    background-color: var(--color1);
+    height: 700px;
+  }
+  
+  .service img {
+    width: 700px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .service h1 {
+    color: var(--color2);
+  }
+  
+  .service p {
+    color: var(--color3);
+  }
+  .team {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color3);
+    height: 600px;
+  }
+  .team img {
+    width: 700px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .team h1 {
     color: var(--color1);
-}
-
-body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    letter-spacing: 0.3rem;
-    width: 100vw;
-    font-weight: bold;
-    background-color: var(--main-background-color);
-}
-
-/*RESPONSIVE*/
-
-@media screen and (min-width: 450px) and (max-width: 600px) {
-    .who_are_we {
-        width: 100%;
+  }
+  .team p {
+    color: #587b7f;
+  }
+  .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  
+  /* CODE MAX  CODE MAX CODE MAX CODE MAX CODE MAX */
+  
+  @media screen and (max-width: 1000px) {
+    hr {
+      width: 30%;
+      height: 6px;
     }
-
-    .code_service {
-        width: 100%;
+    .service hr {
+      width: 30%;
+      height: 6px;
     }
-
-    .equipe {
-        width: 100%;
+    .why_us {
+      flex-direction: column;
+      align-items: center;
+      height: 800px;
+      padding-bottom: 5rem;
     }
-}
+    .why_us img {
+      margin-top: 1rem;
+      width: 70%;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius);
+    }
+    .why_us h1 {
+      color: #587b7f;
+    }
+    .why_us p {
+      color: #587b7f;
+    }
+  
+    .service {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 800px;
+      padding-bottom: 5rem;
+    }
+  
+    .service img {
+      width: 70%;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+    }
+  
+    .service h1 {
+      color: var(--color3);
+    }
+  
+    .service p {
+      color: var(--color3);
+    }
+    .team {
+      flex-direction: column;
+      align-items: center;
+      height: 800px;
+      padding-bottom: 5rem;
+    }
+    .team img {
+      margin-top: 2rem;
+      width: 70%;
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+    }
+  
+    .team h1 {
+      color: var(--color1);
+    }
+    .team p {
+      color: #587b7f;
+    }
+    .text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 3rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .why_us,
+    .service {
+      height: 800px;
+      justify-content: center;
+    }
+    .team {
+      justify-content: center;
+    }
+    .text {
+      width: 80%;
+    }
+    img {
+      width: 90%;
+    }
+  }
+  
