@@ -54,11 +54,9 @@ h1 {
 
 #slider {
   overflow: hidden;
-  width: auto;
-  height: 400px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 100px;
+  width: 90%;
+  height: 600px;
+  margin: 100px auto;
   position: relative;
 }
 
@@ -76,6 +74,7 @@ h1 {
 #slider>figure>img {
   width: 20%;
   float: left;
+  object-fit: contain;
   /* permet de faire defiler les slides de droite a gauche*/
 }
 
