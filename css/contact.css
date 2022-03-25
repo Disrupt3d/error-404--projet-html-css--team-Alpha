@@ -55,15 +55,7 @@ iframe {
     height: 30rem;
 }
 
-@media screen and (max-width:400px) {
-iframe {
-    max-width: 350px;
-}
 
-textarea {
-    width: 100%;
-}
-}
 
 @media screen and (min-width:800px) {
     .justifySection {
@@ -136,7 +128,15 @@ textarea {
 }
 
 
-
+@media screen and (max-width:400px) {
+    iframe {
+        max-width: 350px;
+    }
+    
+    textarea {
+        width: 90%;
+    }
+    }
 
 
 
