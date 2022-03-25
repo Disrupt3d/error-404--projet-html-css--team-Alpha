@@ -242,6 +242,7 @@ header {
 footer {
     position: relative;
     bottom: 0;
+    font-size: medium;
 }
 
 .footer-main {
@@ -349,33 +350,27 @@ footer a {
     height: 30px;
 }
 
+.footer-logo, .footer-left img {
+    width: 40% !important;
+    height: auto;
+}
+
 
 /**************************** RESPONSIVE *****************/
 @media screen and (min-width: 401px) and (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer-center,
     .footer-left,
     .footer-right {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin: initial;
         padding: initial;
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -399,6 +394,10 @@ footer a {
         text-align: center;
     }
 
+    .footer-logo {
+        width: 30%;
+        height: auto;
+    }
 
 }
 
@@ -446,6 +445,11 @@ footer a {
 
     footer p {
         text-align: center;
+    }
+
+    .footer-logo {
+        width: 30%;
+        height: auto;
     }
 
 }
