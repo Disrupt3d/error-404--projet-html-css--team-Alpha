@@ -22,7 +22,7 @@ main#main_404 {
 }
 
 footer {
-  height: 20vh;
+  min-height: 20vh;
 }
 
 
